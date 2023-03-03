@@ -26,7 +26,6 @@ body{
 }
 
 .logo{
-    font-size: 25px;
     color: #fff;
     text-decoration: none;
     font-weight: 800;
@@ -36,17 +35,18 @@ body{
 }
 
 .navbar a{
-    display: inline-block;
-    font-size: 18px;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-content: flex-end;
+    font-size: 15px;
     color: #fff;
     text-decoration: none;
     font-weight: 700;
-    margin-left: 35px;
+    margin-left: 10px;
     transition: .3s;
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
-    flex-wrap: nowrap;
 }
 
 .navbar a:hover{
@@ -62,11 +62,10 @@ body{
     position: relative;
     width: 100%;
     height: 100vh;
-    display: flex;
+    display: inline-flex;
     justify-content: space-between;
     align-items: center;
-    flex-wrap: nowrap;
-    padding: 70px 10% 0;
+    padding: 50px 10% 0;
 }
 
 .home-content{
@@ -74,7 +73,7 @@ body{
 }
 
 .home-content h3{
-    font-size: 32px;
+    font-size: 25px;
     font-weight: 700;
     opacity: 0;
     animation: slideBottom 1s ease forwards;
@@ -91,7 +90,7 @@ body{
 }
 
 .home-content h1{
-    font-size: 56px;
+    font-size: 50px;
     font-weight: bold;
     margin: -3px 0;
     opacity: 0;
@@ -100,7 +99,7 @@ body{
 }
 
 .home-content p{
-    font-size: 16px;
+    font-size: 12px;
     opacity: 0;
     animation: slideLeft 1s ease forwards;
     animation-delay: 1s;
@@ -120,12 +119,10 @@ body{
     justify-content: center;
     align-items: center;
     flex-wrap: nowrap;
-    width: 40px;
-    height: 40px;
     background: transparent;
-    border: 2px solid #0ef;
+    border: 1px solid #0ef;
     border-radius: 50%;
-    font-size: 20px;
+    font-size: 15px;
     color: #0ef;
     text-decoration: none;
     margin: 30px 15px 30px 0;
@@ -224,3 +221,135 @@ body{
     }
 }
 
+@media(min-width:305px){
+    .logo{
+        font-size: 50px;
+    }
+    .home-img img{
+        max-width: 250px;
+    }
+    .navbar a{
+        display: inline;
+        justify-content: flex-end;
+        align-items: flex-end;
+        font-size: 13px;
+        color: #fff;
+        font-weight: 700;
+        margin-left: 180px;
+    }
+    .home-content h3{
+        font-size: 25px;
+    }
+    .home-content h1{
+        font-size: 50px;
+    }
+    .home-content p{
+        font-size: 12px;
+    }
+    .social-media a{
+        display: inline-flex;
+        width: 18px;
+        height: 18px;
+        font-size:13px;
+        border: 1px solid #0ef;
+    }
+}
+
+@media(min-width:575px){
+    .logo{
+        font-size: 35px;
+    }
+    .home-img img{
+        max-width: 280px;
+    }
+    .navbar a{
+        display: inline-flex;
+        font-size: 15px;
+        font-weight: 700;
+        margin-left: 20px;
+    }
+    .home-content h3{
+        font-size: 28px;
+    }
+    .home-content h1{
+        font-size: 52px;
+    }
+    .home-content p{
+        font-size: 13px;
+    }
+    .social-media a{
+        display: inline-flex;
+        width: 20px;
+        height: 20px;
+        font-size:15px;
+        border: 1px solid #0ef;
+    }
+}
+
+@media(min-width:992px){
+    .logo{
+        font-size: 40px;
+    }
+    .home-img img{
+        max-width: 330px;
+    }
+    .navbar a{
+        display: inline-flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        font-size: 18px;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 25px;
+    }
+    .home-content h3{
+        font-size: 30px;
+    }
+    .home-content h1{
+        font-size: 55px;
+    }
+    .home-content p{
+        font-size: 14px;
+    }
+    .social-media a{
+        display: inline-flex;
+        width: 25px;
+        height: 25px;
+        font-size: 18px;
+        border: 1.5px solid #0ef;
+    }
+}
+
+@media (min-width: 1200px){
+    .logo{
+        font-size: 45px;
+    }
+    .home-img img{
+        max-width: 380px;
+    }
+    .navbar a{
+        display: inline-flex;
+        justify-content: flex-end;
+        align-content: flex-end;
+        font-size: 20px;
+        text-decoration: none;
+        font-weight: 700;
+        margin-left: 35px;
+    }
+    .home-content h3{
+        font-size: 35px;
+    }
+    .home-content h1{
+        font-size: 60px;
+    }
+    .home-content p{
+        font-size: 15px;
+    }
+    .social-media a{
+        display: inline-flex;
+        width: 30px;
+        height: 30px;
+        font-size: 20px;
+        border: 2px solid #0ef;
+    }
+}
