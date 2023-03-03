@@ -13,7 +13,7 @@ body{
 }
 
 .header{
-    position: fixed;
+    position: relative;
     top: 0;
     left: 0;
     width: 100%;
@@ -46,6 +46,7 @@ body{
     opacity: 0;
     animation: slideTop .5s ease forwards;
     animation-delay: calc(.2s * var(--i));
+    flex-wrap: nowrap;
 }
 
 .navbar a:hover{
@@ -64,6 +65,7 @@ body{
     display: flex;
     justify-content: space-between;
     align-items: center;
+    flex-wrap: nowrap;
     padding: 70px 10% 0;
 }
 
@@ -91,7 +93,6 @@ body{
 .home-content h1{
     font-size: 56px;
     font-weight: bold;
-    
     margin: -3px 0;
     opacity: 0;
     animation: slideRight 1s ease forwards;
@@ -106,8 +107,9 @@ body{
 }
 
 .home-img img{
-    max-width: 450px;
+    max-width: 350px;
     margin-right: -20px;
+    border-radius: 30%;
     opacity: 0;
     animation: zoomIn 1s ease forwards, floatImage 4s ease-in-out infinite;
     animation-delay: 2s, 3s;
@@ -117,6 +119,7 @@ body{
     display: inline-flex;
     justify-content: center;
     align-items: center;
+    flex-wrap: nowrap;
     width: 40px;
     height: 40px;
     background: transparent;
@@ -220,3 +223,4 @@ body{
         transform: translateY(0);
     }
 }
+
